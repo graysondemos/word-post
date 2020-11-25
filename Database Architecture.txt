@@ -1,0 +1,15 @@
+MySQL Database
+
+Database: wordpost
+Table: words
+
++--------+
+| Word   |
++--------+
+| First  |
+| Second |
+| Third  |
+| Fourth |
+| Fifth  |
++--------+
+

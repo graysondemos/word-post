@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Word Post</title>
+		<link rel="stylesheet" type="text/css" href="static/css/home.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet"> 
+	</head>
+	<body>
+		<h1>Word Post</h1>
+		<div id="cont">
+			{% for word in wordlist %}
+				<h3>{{ word }}</h3>
+			{% endfor %}
+		</div>
+		<div id="add">
+			<form action="/add-submit" method="post">
+				<div id="cen">
+					<input type="text" name="word-input" id="wordbox" placeholder="Add Word">
+					<input type="submit" id="submitbox" value="Add">
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
